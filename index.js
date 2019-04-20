@@ -42,24 +42,24 @@ const statusNameMap = {
   NetworkAuthenticationRequired: 511
 };
 
-function swap(json){
+function swap(json) {
   var ret = {};
-  for(var key in json){
+  for (var key in json) {
     ret[json[key]] = key;
   }
   return ret;
 }
 
 function getStatusName(code) {
-	const statusCodeMap = swap(statusNameMap);
-	return statusCodeMap[code];
+  const statusCodeMap = swap(statusNameMap);
+  return statusCodeMap[code];
 }
 
 function getStatusCode(name) {
-	return statusNameMap[name];
+  return statusNameMap[name];
 }
 
 module.exports = {
-	getStatusName,
-	getStatusCode,
-}
+  getStatusName,
+  getStatusCode
+};
