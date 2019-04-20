@@ -59,7 +59,7 @@ function getStatusCode(name) {
 	return statusNameMap[name];
 }
 
-module.export = {
+module.exports = {
 	getStatusName,
 	getStatusCode,
 }
