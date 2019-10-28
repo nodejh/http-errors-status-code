@@ -60,6 +60,7 @@ function getStatusCode(name) {
 }
 
 module.exports = {
+  statusNameMap,
   getStatusName,
   getStatusCode
 };
